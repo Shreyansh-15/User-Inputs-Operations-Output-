@@ -1,0 +1,28 @@
+#include <stdio.h> 
+
+#define PI 3.14159
+
+int main() {
+    // variables to store radius, area, and circumference.
+    // Using float to allow for decimal values.
+    float radius, area, circumference;
+
+    // The user to enter the radius of the circle.
+    printf("Enter the radius of the circle: ");
+    // To Read the floating-point value entered by the user and store it in the 'radius' variable.
+    scanf("%f", &radius);
+
+    // To Calculate the area using the formula: PI * radius * radius.
+    area = PI * radius * radius;
+
+    // To Calculate the circumference using the formula: 2 * PI * radius.
+    circumference = 2 * PI * radius;
+
+    // Print the calculated area. The '%.2f' format specifier displays the float value with 2 decimal places.
+    printf("\nArea of the circle: %.2f\n", area);
+
+    // Print the calculated circumference.
+    printf("Circumference of the circle: %.2f\n", circumference);
+
+    return 0;
+}
